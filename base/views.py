@@ -38,7 +38,8 @@ class RegisterView(FormView):
     def get(self, request: HttpRequest, *args: str, **kwargs: Any) -> HttpResponse:
         if self.request.user.is_authenticated:
             return redirect("tasks")
-        return super(RegisterView, self).get(*args, **kwargs)    
+        return super(RegisterView, self).get(request, *args, **kwargs)    
+
 
 class TaskList(LoginRequiredMixin, ListView):
     model = Task 
