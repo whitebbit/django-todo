@@ -33,11 +33,14 @@ h1, h2, h3, h3, h4, h5, h6{
     background: rgb(144,0,186);
     background: linear-gradient(90deg, rgba(144,0,186,1) 0%, rgba(80,0,187,1) 100%);
     border-radius: 25px 25px 0 0;
-
 }
 
 .header-bar h3{
     margin: 0;
+}
+
+#back-link{
+    font-size: 24px;
 }
 
 .task-wrapper{
@@ -69,6 +72,11 @@ h1, h2, h3, h3, h4, h5, h6{
     width: 20px;
     background: #494c61;
     border-radius: 50%;
+}
+
+#task-state-icon{
+   margin: 4px;
+   font-size: 15px;
 }
 
 #search-add-wrapper form{
@@ -129,9 +137,15 @@ textarea{
     background-color: #494c61;
     padding: 10px;
     width: 90%;
+    color: white;
 }
+
+input[type="checkbox"]{
+    accent-color: rgb(144,0,186);
+}
+
 .button{
-    border: 1px solid rgb(144,0,186);
+    border: 1px solid #1d1f27;
     background-color: rgb(144,0,186);
     color: white;
     padding: 10px;
@@ -139,4 +153,26 @@ textarea{
     border-radius:15px;
     cursor: pointer;
     text-decoration: none;
+    -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+    box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+}
+
+.card-body{
+    padding: 20px;
+}
+
+#reg-log-link{
+    color: rgb(175, 0, 228);
+}
+
+label, p{
+    color: white;
+}
+
+.task-items-wrapper h3{
+    padding: 20px;
+}
+
+li{
+    color: white;
 }
